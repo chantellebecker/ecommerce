@@ -1,2 +1,4 @@
 <h1>Products#show</h1>
 <p>Find me in app/views/products/show.html.erb</p>
+
+<%= button_to 'Add to Cart', line_items_path(product_id: @product), class: 'btn btn-success' %>

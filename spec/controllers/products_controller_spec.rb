@@ -2,6 +2,58 @@ require 'rails_helper'
 
 RSpec.describe ProductsController, type: :controller do
 
+  # context 'when NON admin user is logged in' do
+  #   let(:user) { FactoryGirl.create(:non_admin_user) }
+
+  #   before do
+  #     sign_in(user)
+  #   end
+
+  #   describe "GET #index" do
+  #     it 'redirects to root_url' do
+  #       get :index
+
+  #       expect(response).to redirect_to root_path
+  #     end
+  #   end
+
+
+  #   describe "GET #new" do
+  #     it 'redirects to root_url' do
+  #       get :new
+
+  #       expect(response).to redirect_to root_path
+  #     end
+  #   end
+
+  #   describe "GET #edit" do
+  #     let(:product) { FactoryGirl.create(:product) }
+
+  #     it 'redirects to root_url' do
+  #       get :edit, id: product
+
+  #       expect(response).to redirect_to root_path
+  #     end
+  #   end
+
+  #   describe "GET #show" do
+  #     let(:product) { FactoryGirl.create(:product) }
+
+  #     it 'return http success' do
+  #       get :show, id: product
+
+  #       expect(response).to have_http_status(:success)
+  #     end
+
+  #     it 'assigns requested product to @product' do
+  #       get :show, id: product
+
+  #       expect(assigns(:product)).to eq(product)
+  #     end  
+  #   end
+  # end
+
+
   context 'when admin is logged in' do
     let(:admin) { FactoryGirl.create(:admin_user) }
     before do
